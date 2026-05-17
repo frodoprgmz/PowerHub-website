@@ -1,14 +1,14 @@
-import { Check } from "lucide-react"
+import { Check } from "lucide-react";
 
 const plans = [
   {
     name: "Podstawowy",
     price: "89",
     period: "/mies.",
-    desc: "Idealny na poczatek Twojej przygody z treningiem",
+    desc: "Idealny na początek Twojej przygody z treningiem",
     features: [
-      "Dostep do silowni 24/7",
-      "Strefa wolnych ciezarow",
+      "Dostęp do siłowni 24/7",
+      "Strefa wolnych ciężarów",
       "Strefa cardio",
       "Szatnia z prysznicami",
       "Aplikacja mobilna",
@@ -19,10 +19,10 @@ const plans = [
     name: "Premium",
     price: "139",
     period: "/mies.",
-    desc: "Najpopularniejszy wybor wsrod naszych czlonkow",
+    desc: "Najpopularniejszy wybór wśród naszych członków",
     features: [
       "Wszystko z planu Podstawowy",
-      "Zajecia grupowe (bez limitu)",
+      "Zajęcia grupowe (bez limitu)",
       "Strefa funkcjonalna",
       "Sauna i strefa relaksu",
       "1 sesja z trenerem / mies.",
@@ -34,18 +34,18 @@ const plans = [
     name: "VIP",
     price: "199",
     period: "/mies.",
-    desc: "Maksimum mozliwosci i indywidualne podejscie",
+    desc: "Maksimum możliwości i indywidualne podejście",
     features: [
       "Wszystko z planu Premium",
       "4 sesje z trenerem / mies.",
       "Indywidualny plan dietetyczny",
-      "Priorytetowy dostep",
+      "Priorytetowy dostęp",
       "Suplementacja BCAA",
-      "Recznik i szafka prywatna",
+      "Ręcznik i szafka prywatna",
     ],
     popular: false,
   },
-]
+];
 
 export function PricingSection() {
   return (
@@ -56,10 +56,10 @@ export function PricingSection() {
             Cennik
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight text-balance text-foreground">
-            Wybierz swoj <span className="text-gradient">plan</span>
+            Wybierz swój <span className="text-gradient">plan</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto text-pretty">
-            Bez umow dlugoterminowych. Mozesz zrezygnowac w dowolnym momencie.
+            Bez umów długoterminowych. Możesz zrezygnować w dowolnym momencie.
           </p>
         </div>
 
@@ -81,25 +81,54 @@ export function PricingSection() {
                 </div>
               )}
               <div className="mb-6">
-                <h3 className={`font-serif text-xl font-bold uppercase mb-2 ${plan.popular ? "text-background" : "text-foreground"}`}>
+                <h3
+                  className={`font-serif text-xl font-bold uppercase mb-2 ${plan.popular ? "text-background" : "text-foreground"}`}
+                >
                   {plan.name}
                 </h3>
-                <p className={`text-sm ${plan.popular ? "text-background/70" : "text-muted-foreground"}`}>{plan.desc}</p>
+                <p
+                  className={`text-sm ${plan.popular ? "text-background/70" : "text-muted-foreground"}`}
+                >
+                  {plan.desc}
+                </p>
               </div>
               <div className="flex items-baseline gap-1 mb-8">
-                <span className={`font-serif text-5xl font-black ${plan.popular ? "text-background" : "text-foreground"}`}>
+                <span
+                  className={`font-serif text-5xl font-black ${plan.popular ? "text-background" : "text-foreground"}`}
+                >
                   {plan.price}
                 </span>
-                <span className={`text-xl ${plan.popular ? "text-background/70" : "text-muted-foreground"}`}> zl</span>
-                <span className={plan.popular ? "text-background/70" : "text-muted-foreground"}>{plan.period}</span>
+                <span
+                  className={`text-xl ${plan.popular ? "text-background/70" : "text-muted-foreground"}`}
+                >
+                  {" "}
+                  zl
+                </span>
+                <span
+                  className={
+                    plan.popular
+                      ? "text-background/70"
+                      : "text-muted-foreground"
+                  }
+                >
+                  {plan.period}
+                </span>
               </div>
               <ul className="flex-1 space-y-4 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-3">
-                    <div className={`flex items-center justify-center w-5 h-5 rounded-full flex-shrink-0 mt-0.5 ${plan.popular ? "bg-silver" : "bg-foreground"}`}>
-                      <Check className={`h-3 w-3 ${plan.popular ? "text-foreground" : "text-background"}`} />
+                    <div
+                      className={`flex items-center justify-center w-5 h-5 rounded-full flex-shrink-0 mt-0.5 ${plan.popular ? "bg-silver" : "bg-foreground"}`}
+                    >
+                      <Check
+                        className={`h-3 w-3 ${plan.popular ? "text-foreground" : "text-background"}`}
+                      />
                     </div>
-                    <span className={`text-sm ${plan.popular ? "text-background/90" : "text-secondary-foreground"}`}>{f}</span>
+                    <span
+                      className={`text-sm ${plan.popular ? "text-background/90" : "text-secondary-foreground"}`}
+                    >
+                      {f}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -120,10 +149,10 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground text-sm">
-            Pierwszy trening gratis! Przyjdz i sprawdz nas bez zobowiazan.
+            Pierwszy trening gratis! Przyjdź i sprawdź nas bez zobowiązań.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }

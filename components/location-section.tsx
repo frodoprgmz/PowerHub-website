@@ -1,4 +1,4 @@
-import { MapPin, Navigation } from "lucide-react"
+import { MapPin, Navigation } from "lucide-react";
 
 export function LocationSection() {
   return (
@@ -16,9 +16,9 @@ export function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="relative overflow-hidden aspect-[4/3] lg:aspect-auto lg:min-h-[450px] border border-border rounded-2xl">
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=20.95%2C52.22%2C21.05%2C52.26&layer=mapnik"
+              src="https://www.google.com/maps?q=Skomielna+Biała+888&output=embed"
               className="w-full h-full border-0 grayscale contrast-110"
-              title="Mapa z lokalizacja Powerhub"
+              title="Mapa z lokalizacją Skomielna Biała 888"
               loading="lazy"
             />
           </div>
@@ -33,11 +33,11 @@ export function LocationSection() {
                   Adres
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  ul. Treningowa 24
+                  Skomielna Biała 888
                   <br />
-                  00-001 Warszawa
+                  34-650 Skomielna Biała
                   <br />
-                  Dzielnica Srodmiescie
+                  Małopolskie
                 </p>
               </div>
             </div>
@@ -48,13 +48,20 @@ export function LocationSection() {
               </div>
               <div>
                 <h3 className="font-serif text-xl font-bold uppercase text-foreground mb-2">
-                  Jak do nas dojechac
+                  Jak do nas dojechać
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Znajdujemy sie w samym centrum miasta. 2 min od stacji metra
-                  Centrum. Parking podziemny dostepny dla czlonkow klubu (wjazd od
-                  ul. Bocznej).
+                  Kliknij przycisk poniżej, by otworzyć trasę w aplikacji Google
+                  Maps i szybko zaplanować dojazd na Skomielna Biała 888.
                 </p>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Skomielna+Biała+888"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center mt-4 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background transition hover:bg-slate-900"
+                >
+                  Otwórz trasę w Google Maps
+                </a>
               </div>
             </div>
 
@@ -63,8 +70,12 @@ export function LocationSection() {
                 Godziny otwarcia
               </h3>
               <div className="grid grid-cols-2 gap-3 text-sm">
-                <span className="text-muted-foreground">Poniedzialek - Niedziela</span>
-                <span className="text-foreground font-bold text-right">24/7</span>
+                <span className="text-muted-foreground">
+                  Poniedziałek - Niedziela
+                </span>
+                <span className="text-foreground font-bold text-right">
+                  24/7
+                </span>
                 <span className="text-muted-foreground">Recepcja</span>
                 <span className="text-foreground font-medium text-right">
                   8:00 - 22:00
@@ -79,5 +90,5 @@ export function LocationSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

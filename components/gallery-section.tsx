@@ -1,27 +1,29 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/images/gym-hero.jpg", alt: "Glowna sala treningowa" },
-  { src: "/images/gym-weights.jpg", alt: "Strefa wolnych ciezarow" },
+  { src: "/images/gym-hero.jpg", alt: "Główna sala treningowa" },
+  { src: "/images/gym-weights.jpg", alt: "Strefa wolnych ciężarów" },
   { src: "/images/gym-cardio.jpg", alt: "Strefa cardio" },
   { src: "/images/gym-functional.jpg", alt: "Strefa funkcjonalna" },
-  { src: "/images/gym-class.jpg", alt: "Zajecia grupowe" },
+  { src: "/images/gym-class.jpg", alt: "Zajęcia grupowe" },
   { src: "/images/gym-locker.jpg", alt: "Szatnie i prysznice" },
-]
+];
 
 export function GallerySection() {
-  const [lightbox, setLightbox] = useState<number | null>(null)
+  const [lightbox, setLightbox] = useState<number | null>(null);
 
-  const openLightbox = (index: number) => setLightbox(index)
-  const closeLightbox = () => setLightbox(null)
+  const openLightbox = (index: number) => setLightbox(index);
+  const closeLightbox = () => setLightbox(null);
   const prev = () =>
-    setLightbox((i) => (i !== null ? (i - 1 + images.length) % images.length : null))
+    setLightbox((i) =>
+      i !== null ? (i - 1 + images.length) % images.length : null,
+    );
   const next = () =>
-    setLightbox((i) => (i !== null ? (i + 1) % images.length : null))
+    setLightbox((i) => (i !== null ? (i + 1) % images.length : null));
 
   return (
     <section id="galeria" className="py-24 md:py-32 bg-secondary">
@@ -103,5 +105,5 @@ export function GallerySection() {
         </div>
       )}
     </section>
-  )
+  );
 }

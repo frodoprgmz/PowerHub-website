@@ -1,12 +1,12 @@
-import { Dumbbell } from "lucide-react"
-import Image from "next/image"
+import { Dumbbell } from "lucide-react";
+import Image from "next/image";
 
 export function CtaBanner() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden bg-foreground">
       <Image
         src="/images/gym-class.jpg"
-        alt="Zajecia na silowni"
+        alt="Zajęcia na siłowni"
         fill
         className="object-cover opacity-20"
       />
@@ -22,25 +22,25 @@ export function CtaBanner() {
           Pierwszy trening <span className="text-silver">gratis</span>
         </h2>
         <p className="text-background/70 text-lg max-w-2xl mx-auto mb-10 text-pretty leading-relaxed">
-          Nie czekaj. Przyjdz, przetestuj nasz sprzet i atmosfere. Bez
-          zobowiazan, bez presji. Po prostu trenuj.
+          Nie czekaj. Przyjdź, przetestuj nasz sprzęt i atmosferę. Bez
+          zobowiązań, bez presji. Po prostu trenuj.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="tel:+48123456789"
             className="relative overflow-hidden bg-background text-foreground px-10 py-4 rounded-full text-base font-semibold uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-background/20 group"
           >
-            <span className="relative z-10">Zadzwon teraz</span>
+            <span className="relative z-10">Zadzwoń teraz</span>
             <span className="absolute inset-0 bg-silver rounded-full scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300" />
           </a>
           <a
             href="#cennik"
             className="border-2 border-background/30 text-background px-10 py-4 rounded-full text-base font-semibold uppercase tracking-wider hover:border-background hover:bg-background/10 transition-all duration-300"
           >
-            Sprawdz oferte
+            Sprawdź ofertę
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }

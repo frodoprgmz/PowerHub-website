@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -9,10 +9,10 @@ export function ContactSection() {
             Kontakt
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight text-balance text-foreground">
-            Skontaktuj <span className="text-gradient">sie</span>
+            Skontaktuj <span className="text-gradient">się</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto text-pretty">
-            Masz pytania? Zadzwon lub napisz - chetnie pomozemy!
+            Masz pytania? Zadzwoń lub napisz - chętnie pomożemy!
           </p>
         </div>
 
@@ -28,8 +28,12 @@ export function ContactSection() {
               <h3 className="font-serif text-lg font-bold uppercase text-foreground mb-1">
                 Telefon
               </h3>
-              <p className="text-foreground font-bold text-lg">+48 123 456 789</p>
-              <p className="text-sm text-muted-foreground mt-1">Pon - Nd: 8:00 - 22:00</p>
+              <p className="text-foreground font-bold text-lg">
+                +48 123 456 789
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Pon - Nd: 8:00 - 22:00
+              </p>
             </div>
           </a>
 
@@ -45,7 +49,9 @@ export function ContactSection() {
                 Email
               </h3>
               <p className="text-foreground font-bold">kontakt@powerhub.pl</p>
-              <p className="text-sm text-muted-foreground mt-1">Odpowiadamy w 24h</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Odpowiadamy w 24h
+              </p>
             </div>
           </a>
 
@@ -57,8 +63,12 @@ export function ContactSection() {
               <h3 className="font-serif text-lg font-bold uppercase text-foreground mb-1">
                 Adres
               </h3>
-              <p className="text-secondary-foreground font-medium">ul. Treningowa 24</p>
-              <p className="text-sm text-muted-foreground mt-1">00-001 Warszawa</p>
+              <p className="text-secondary-foreground font-medium">
+                ul. Treningowa 24
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                00-001 Warszawa
+              </p>
             </div>
           </div>
         </div>
@@ -85,5 +95,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

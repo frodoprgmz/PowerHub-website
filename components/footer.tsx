@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -10,14 +10,14 @@ export function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Powerhub Logo"
-                width={240}
-                height={85}
-                className="h-12 md:h-14 w-auto object-contain invert"
+                width={320}
+                height={110}
+                className="h-20 md:h-24 w-auto object-contain invert"
               />
             </div>
             <p className="text-sm text-background/60 leading-relaxed">
-              Lokalna silownia czynna 24/7. Nowoczesny sprzet, profesjonalna
-              obsluga, najlepsze warunki treningowe w miescie.
+              Lokalna siłownia czynna 24/7. Nowoczesny sprzęt, profesjonalna
+              obsługa, najlepsze warunki treningowe w mieście.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export function Footer() {
             </h4>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-background/60">Silownia</span>
+                <span className="text-background/60">Siłownia</span>
                 <span className="text-silver font-bold">24/7</span>
               </div>
               <div className="flex justify-between">
@@ -75,5 +75,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

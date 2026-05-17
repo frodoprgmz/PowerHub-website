@@ -1,5 +1,5 @@
-import { ArrowDown, Clock, Dumbbell, Users } from "lucide-react"
-import Image from "next/image"
+import { ArrowDown, Clock, Dumbbell, Users } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/40 to-foreground" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 pb-20 text-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-36 md:pt-40 pb-20 text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
           <div className="flex items-center gap-2 bg-background/10 border border-background/20 backdrop-blur-sm px-6 py-3 rounded-full">
             <Clock className="h-4 w-4 text-background" />
@@ -28,21 +28,22 @@ export function Hero() {
           <Image
             src="/images/logo.png"
             alt="Powerhub Logo"
-            width={500}
-            height={180}
-            className="h-28 md:h-40 lg:h-52 w-auto mx-auto object-contain invert"
+            width={700}
+            height={252}
+            padding={200}
+            className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain invert"
             priority
           />
         </div>
 
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight mb-6 text-balance">
           <span className="text-background">Twoja nowa</span>{" "}
-          <span className="text-silver">silownia</span>
+          <span className="text-silver">siłownia</span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/70 leading-relaxed mb-12 text-pretty">
-          Nowoczesna przestrzen treningowa dostepna przez caly tydzien, non-stop.
-          Profesjonalny sprzet, strefy cardio, silowe i funkcjonalne.
+          Nowoczesna przestrzeń treningowa dostępna przez cały tydzień,
+          non-stop. Profesjonalny sprzęt, strefy cardio, siłowe i funkcjonalne.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
@@ -50,21 +51,25 @@ export function Hero() {
             href="#cennik"
             className="relative overflow-hidden bg-background text-foreground px-10 py-4 rounded-full text-base font-semibold uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-background/20 group"
           >
-            <span className="relative z-10">Sprawdz cennik</span>
+            <span className="relative z-10">Sprawdź cennik</span>
             <span className="absolute inset-0 bg-silver rounded-full scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300" />
           </a>
           <a
             href="#o-nas"
             className="border-2 border-background/30 text-background px-10 py-4 rounded-full text-base font-semibold uppercase tracking-wider hover:border-background hover:bg-background/10 transition-all duration-300 backdrop-blur-sm"
           >
-            Dowiedz sie wiecej
+            Dowiedz się więcej
           </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {[
-            { icon: Dumbbell, label: "500+ m2", desc: "Powierzchni treningowej" },
-            { icon: Clock, label: "24/7", desc: "Dostep non-stop" },
+            {
+              icon: Dumbbell,
+              label: "500+ m2",
+              desc: "Powierzchni treningowej",
+            },
+            { icon: Clock, label: "24/7", desc: "Dostęp non-stop" },
             { icon: Users, label: "100+", desc: "Stanowisk treningowych" },
           ].map((stat) => (
             <div
@@ -89,5 +94,5 @@ export function Hero() {
         <ArrowDown className="h-6 w-6 text-background/60" />
       </a>
     </section>
-  )
+  );
 }

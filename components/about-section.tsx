@@ -1,28 +1,28 @@
-import { Dumbbell, Clock, Users, Shield } from "lucide-react"
-import Image from "next/image"
+import { Dumbbell, Clock, Users, Shield } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
     icon: Clock,
-    title: "Dostep 24/7",
-    desc: "Trenuj kiedy chcesz - rano, w nocy, w weekend. Twoja silownia jest zawsze otwarta.",
+    title: "Dostęp 24/7",
+    desc: "Trenuj kiedy chcesz - rano, w nocy, w weekend. Twoja siłownia jest zawsze otwarta.",
   },
   {
     icon: Dumbbell,
-    title: "Nowoczesny sprzet",
-    desc: "Najnowsze maszyny i wolne ciezary od renomowanych producentow.",
+    title: "Nowoczesny sprzęt",
+    desc: "Najnowsze maszyny i wolne ciężary od renomowanych producentów.",
   },
   {
     icon: Users,
     title: "Trenerzy personalni",
-    desc: "Doswiadczeni trenerzy pomoga Ci osiagnac Twoje cele treningowe.",
+    desc: "Doświadczeni trenerzy pomogą Ci osiągnąć Twoje cele treningowe.",
   },
   {
     icon: Shield,
-    title: "Bezpieczenstwo",
-    desc: "Monitoring 24/7, system kontroli dostepu i klimatyzacja.",
+    title: "Bezpieczeństwo",
+    desc: "Monitoring 24/7, system kontroli dostępu i klimatyzacja.",
   },
-]
+];
 
 export function AboutSection() {
   return (
@@ -34,18 +34,18 @@ export function AboutSection() {
               O nas
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight mb-6 text-balance text-foreground">
-              Wiecej niz <span className="text-gradient">silownia</span>
+              Więcej niż <span className="text-gradient">siłownia</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 text-pretty">
-              Powerhub to nowoczesna silownia lokalna stworzona z pasji do
-              treningu. Oferujemy ponad 500 m2 przestrzeni treningowej wyposazonej
-              w sprzet najwyzszej klasy. Naszym celem jest zapewnienie Ci
-              najlepszych warunkow do osiagania Twoich celow - niezaleznie od
-              poziomu zaawansowania.
+              Powerhub to nowoczesna siłownia lokalna stworzona z pasji do
+              treningu. Oferujemy ponad 500 m2 przestrzeni treningowej
+              wyposażonej w sprzęt najwyższej klasy. Naszym celem jest
+              zapewnienie Ci najlepszych warunków do osiągania Twoich celów -
+              niezależnie od poziomu zaawansowania.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 text-pretty">
-              Dzialamy 24 godziny na dobe, 7 dni w tygodniu, abys mogl trenowac
-              wtedy, kiedy chcesz. Bez kolejek, bez ograniczen.
+              Działamy 24 godziny na dobę, 7 dni w tygodniu, abyś mógł trenować
+              wtedy, kiedy chcesz. Bez kolejek, bez ograniczeń.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {features.map((f) => (
@@ -54,7 +54,9 @@ export function AboutSection() {
                     <f.icon className="h-5 w-5 text-background" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">{f.title}</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      {f.title}
+                    </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {f.desc}
                     </p>
@@ -107,13 +109,11 @@ export function AboutSection() {
               <span className="font-serif text-3xl font-black text-background block">
                 5+
               </span>
-              <span className="text-sm text-silver">
-                Lat doswiadczenia
-              </span>
+              <span className="text-sm text-silver">Lat doswiadczenia</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
