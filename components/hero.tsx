@@ -30,7 +30,6 @@ export function Hero() {
             alt="Powerhub Logo"
             width={700}
             height={252}
-            padding={200}
             className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain invert"
             priority
           />
