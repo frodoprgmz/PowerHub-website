@@ -35,7 +35,7 @@ export function LocationSection() {
                 <p className="text-muted-foreground leading-relaxed">
                   Skomielna Biała 888
                   <br />
-                  34-650 Skomielna Biała
+                  32-434
                   <br />
                   Małopolskie
                 </p>
@@ -76,13 +76,9 @@ export function LocationSection() {
                 <span className="text-foreground font-bold text-right">
                   24/7
                 </span>
-                <span className="text-muted-foreground">Recepcja</span>
+                <span className="text-muted-foreground">Trenerzy dostępni</span>
                 <span className="text-foreground font-medium text-right">
-                  8:00 - 22:00
-                </span>
-                <span className="text-muted-foreground">Trenerzy</span>
-                <span className="text-foreground font-medium text-right">
-                  6:00 - 22:00
+                  8:00 - 18:00
                 </span>
               </div>
             </div>

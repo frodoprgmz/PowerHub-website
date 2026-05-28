@@ -106,11 +106,11 @@ export function Navbar() {
 
         <div className="hidden lg:flex items-center gap-5">
           <a
-            href="tel:+48123456789"
+            href="tel:+48795767621"
             className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             <Phone className="h-4 w-4" />
-            <span>+48 123 456 789</span>
+            <span>795 767 621</span>
           </a>
           <a
             href="#cennik"
@@ -166,7 +166,7 @@ export function Navbar() {
                 className="flex items-center gap-2 text-muted-foreground font-medium"
               >
                 <Phone className="h-4 w-4" />
-                <span>+48 123 456 789</span>
+                <span>+48 795 767 621</span>
               </a>
               <a
                 href="#cennik"

@@ -16,8 +16,8 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-background/60 leading-relaxed">
-              Lokalna siłownia czynna 24/7. Nowoczesny sprzęt, profesjonalna
-              obsługa, najlepsze warunki treningowe w mieście.
+              Siłownia stworzona z myślą o trójboju i sportach siłowych. Miejsce
+              przyjazne dla zaawansowanych sportowców jak i osób początkujących.
             </p>
           </div>
 
@@ -54,12 +54,8 @@ export function Footer() {
                 <span className="text-silver font-bold">24/7</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-background/60">Recepcja</span>
-                <span className="text-background">8:00 - 22:00</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-background/60">Trenerzy</span>
-                <span className="text-background">6:00 - 22:00</span>
+                <span className="text-background/60">Trenerzy dostępni</span>
+                <span className="text-background">8:00 - 18:00</span>
               </div>
             </div>
           </div>
@@ -70,7 +66,7 @@ export function Footer() {
             &copy; 2026 Powerhub. Wszelkie prawa zastrzezone.
           </p>
           <p className="text-xs text-background/40">
-            ul. Treningowa 24, 00-001 Warszawa
+            Skomielna Biała 888, 32-434
           </p>
         </div>
       </div>

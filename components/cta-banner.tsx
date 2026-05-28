@@ -19,15 +19,15 @@ export function CtaBanner() {
           </div>
         </div>
         <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight text-balance text-background mb-6">
-          Pierwszy trening <span className="text-silver">gratis</span>
+          Zacznij trenować <span className="text-silver">dziś</span>
         </h2>
         <p className="text-background/70 text-lg max-w-2xl mx-auto mb-10 text-pretty leading-relaxed">
-          Nie czekaj. Przyjdź, przetestuj nasz sprzęt i atmosferę. Bez
-          zobowiązań, bez presji. Po prostu trenuj.
+          Dołącz do naszej społeczności i osiągnij swoje cele fitness.
+          Nowoczesny sprzęt, profesjonalni trenerzy i wsparcie na każdym kroku.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+48123456789"
+            href="tel:+48795767621"
             className="relative overflow-hidden bg-background text-foreground px-10 py-4 rounded-full text-base font-semibold uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-background/20 group"
           >
             <span className="relative z-10">Zadzwoń teraz</span>

@@ -1,4 +1,4 @@
-import { ArrowDown, Clock, Dumbbell, Users } from "lucide-react";
+import { ArrowDown, Clock, Dumbbell } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -33,17 +33,11 @@ export function Hero() {
             className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain invert"
             priority
           />
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/70 leading-relaxed mb-12 text-pretty">
+            Siłownia stworzona z myślą o trójboju i sportach siłowych. Miejsce
+            przyjazne dla zaawansowanych sportowców jak i osób początkujących.
+          </p>
         </div>
-
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight mb-6 text-balance">
-          <span className="text-background">Twoja nowa</span>{" "}
-          <span className="text-silver">siłownia</span>
-        </h1>
-
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/70 leading-relaxed mb-12 text-pretty">
-          Nowoczesna przestrzeń treningowa dostępna przez cały tydzień,
-          non-stop. Profesjonalny sprzęt, strefy cardio, siłowe i funkcjonalne.
-        </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
           <a
@@ -61,15 +55,14 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {[
             {
               icon: Dumbbell,
-              label: "500+ m2",
+              label: "100m+",
               desc: "Powierzchni treningowej",
             },
             { icon: Clock, label: "24/7", desc: "Dostęp non-stop" },
-            { icon: Users, label: "100+", desc: "Stanowisk treningowych" },
           ].map((stat) => (
             <div
               key={stat.label}
