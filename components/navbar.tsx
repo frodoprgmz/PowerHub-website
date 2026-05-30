@@ -8,6 +8,7 @@ const navLinks = [
   { label: "O nas", href: "#o-nas" },
   { label: "Galeria", href: "#galeria" },
   { label: "Cennik", href: "#cennik" },
+  { label: "Zakup karnetu", href: "#zakup-karnetu" },
   { label: "Lokalizacja", href: "#lokalizacja" },
   { label: "Kontakt", href: "#kontakt" },
 ];
@@ -113,7 +114,7 @@ export function Navbar() {
             <span>795 767 621</span>
           </a>
           <a
-            href="#cennik"
+            href="#zakup-karnetu"
             className="relative overflow-hidden bg-foreground text-background px-7 py-3 rounded-full text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-foreground/10 group"
           >
             <span className="relative z-10">Dołącz do nas</span>
@@ -169,7 +170,7 @@ export function Navbar() {
                 <span>+48 795 767 621</span>
               </a>
               <a
-                href="#cennik"
+                href="#zakup-karnetu"
                 onClick={() => toggleMenu()}
                 className="bg-foreground text-background px-6 py-3 rounded-full text-center font-semibold uppercase tracking-wider"
               >

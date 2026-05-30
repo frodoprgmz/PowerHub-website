@@ -20,7 +20,7 @@ const features = [
   {
     icon: Shield,
     title: "Bezpieczeństwo",
-    desc: "Monitoring 24/7, system kontroli dostępu i klimatyzacja.",
+    desc: "Monitoring 24/7, system kontroli dostępu.",
   },
 ];
 
@@ -37,11 +37,11 @@ export function AboutSection() {
               Więcej niż <span className="text-gradient">siłownia</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 text-pretty">
-              Powerhub to nowoczesna siłownia lokalna stworzona z pasji do
-              treningu. Oferujemy ponad 500 m2 przestrzeni treningowej
-              wyposażonej w sprzęt najwyższej klasy. Naszym celem jest
-              zapewnienie Ci najlepszych warunków do osiągania Twoich celów -
-              niezależnie od poziomu zaawansowania.
+              Powerhub to siłownia stworzona z myślą o trójboju i sportach siłowych. Miejsce, które
+              jest przyjazne zarówno dla początkujących jak i zaawansowanych sportowców.
+              Tworzymy społeczność pasjonatów, którzy wspierają się nawzajem w osiąganiu swoich celów.
+              Chcemy zarażać pasją do treningu i zdrowego stylu życia, oferując jednocześnie profesjonalne warunki do rozwoju.
+
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 text-pretty">
               Działamy 24 godziny na dobę, 7 dni w tygodniu, abyś mógł trenować
@@ -105,12 +105,7 @@ export function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-foreground p-6 rounded-2xl shadow-2xl">
-              <span className="font-serif text-3xl font-black text-background block">
-                5+
-              </span>
-              <span className="text-sm text-silver">Lat doswiadczenia</span>
-            </div>
+           
           </div>
         </div>
       </div>
