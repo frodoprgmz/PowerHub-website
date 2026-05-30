@@ -9,7 +9,7 @@ export function LocationSection() {
             Lokalizacja
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight text-balance text-foreground">
-            Znajdz <span className="text-gradient">nas</span>
+            Znajdź <span className="text-gradient">nas</span>
           </h2>
         </div>
 

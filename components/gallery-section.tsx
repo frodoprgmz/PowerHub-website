@@ -8,9 +8,8 @@ const images = [
   { src: "/images/gym-hero.jpg", alt: "Główna sala treningowa" },
   { src: "/images/gym-weights.jpg", alt: "Strefa wolnych ciężarów" },
   { src: "/images/gym-cardio.jpg", alt: "Strefa cardio" },
-  { src: "/images/gym-functional.jpg", alt: "Strefa funkcjonalna" },
-  { src: "/images/gym-class.jpg", alt: "Zajęcia grupowe" },
-  { src: "/images/gym-locker.jpg", alt: "Szatnie i prysznice" },
+  { src: "/images/gym-functional.jpg", alt: "Strefa maszyn" },
+  { src: "/images/gym-locker.jpg", alt: "Szatnie" },
 ];
 
 export function GallerySection() {

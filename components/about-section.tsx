@@ -98,7 +98,7 @@ export function AboutSection() {
                 <div className="relative h-64 overflow-hidden rounded-2xl">
                   <Image
                     src="/images/gym-functional.jpg"
-                    alt="Strefa funkcjonalna"
+                    alt="Strefa maszyn"
                     fill
                     className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   />
