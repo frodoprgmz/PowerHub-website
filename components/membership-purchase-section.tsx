@@ -116,7 +116,7 @@ export function MembershipPurchaseSection() {
 
             <a
               href="tel:+48795575339"
-              className="mt-8 inline-flex w-full justify-center rounded-full bg-foreground px-7 py-3 text-sm font-semibold uppercase tracking-wider text-background transition-all duration-300 hover:shadow-lg hover:shadow-foreground/20"
+              className="mt-4 inline-flex w-full justify-center rounded-full bg-foreground px-7 py-3 text-sm font-semibold uppercase tracking-wider text-background transition-all duration-300 hover:shadow-lg hover:shadow-foreground/20"
             >
               Wyślij potwierdzenie
             </a>
