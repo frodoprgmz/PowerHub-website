@@ -33,7 +33,7 @@ export function Hero() {
             className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain"
             priority
           />
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/70 leading-relaxed mb-12 text-pretty">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/90 font-medium leading-relaxed mb-12 text-pretty">
             Siłownia stworzona z myślą o trójboju i sportach siłowych. Miejsce
             przyjazne dla zaawansowanych sportowców jak i osób początkujących.
           </p>

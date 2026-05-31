@@ -36,14 +36,14 @@ export function AboutSection() {
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight mb-6 text-balance text-foreground">
               Więcej niż <span className="text-gradient">siłownia</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8 text-pretty">
+            <p className="text-foreground/95 font-medium text-lg leading-relaxed mb-8 text-pretty">
               Powerhub to siłownia stworzona z myślą o trójboju i sportach siłowych. Miejsce, które
               jest przyjazne zarówno dla początkujących jak i zaawansowanych sportowców.
               Tworzymy społeczność pasjonatów, którzy wspierają się nawzajem w osiąganiu swoich celów.
               Chcemy zarażać pasją do treningu i zdrowego stylu życia, oferując jednocześnie profesjonalne warunki do rozwoju.
 
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10 text-pretty">
+            <p className="text-foreground/95 font-medium text-lg leading-relaxed mb-10 text-pretty">
               Działamy 24 godziny na dobę, 7 dni w tygodniu, abyś mógł trenować
               wtedy, kiedy chcesz. Bez kolejek, bez ograniczeń.
             </p>

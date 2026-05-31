@@ -66,8 +66,9 @@ export function Footer() {
           <p className="text-xs text-background/40">
             &copy; 2026 Powerhub. Wszelkie prawa zastrzezone.
           </p>
-          <p className="text-xs text-background/40">
-            Skomielna Biała 888, 32-434
+          <p className="text-xs text-background/40">            Projekt: Piotr Soból
+          </p>
+          <p className="text-xs text-background/40">            Skomielna Biała 888, 32-434
           </p>
         </div>
       </div>
