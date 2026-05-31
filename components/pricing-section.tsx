@@ -34,12 +34,12 @@ const personalTraining = [
   {
     name: "Pakiet 10 treningów + karnet",
     price: "900",
-    desc: "10 sesji z trenerem + roczny karnet",
+    desc: "10 sesji z trenerem + miesięczny karnet + plan treningowy",
   },
   {
     name: "Pakiet 20 treningów + karnet",
     price: "1600",
-    desc: "20 sesji z trenerem + roczny karnet",
+    desc: "20 sesji z trenerem + miesięczny karnet + plan treningowy",
   },
 ];
 
