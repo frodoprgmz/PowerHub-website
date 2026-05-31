@@ -112,30 +112,7 @@ export function MembershipPurchaseSection() {
           </div>
 
           <aside className="rounded-3xl border border-border bg-card p-8 shadow-sm">
-            <div className="mb-6">
-              <span className="text-muted-foreground uppercase tracking-widest text-xs">
-                Gotowe? Przejdź do płatności
-              </span>
-              <h3 className="mt-4 text-2xl font-semibold text-foreground">
-                Wybierz plan i aktywuj karnet
-              </h3>
-            </div>
-
-            <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-              <p>
-                1. Wyślij SMS lub wiadomość WhatsApp na numer <span className="font-semibold">795 575 339</span>.
-              </p>
-              <p>
-                2. Przelej wybraną kwotę na konto: <span className="font-semibold">6710 2034 6600 0940 2023 0250 3</span>.
-              </p>
-              <p>
-                3. Tytuł przelewu: imię i nazwisko.
-              </p>
-              <p>
-                4. Prześlij potwierdzenie płatności na numer <span className="font-semibold">795 575 339</span>.
-              </p>
-              
-            </div>
+            
 
             <a
               href="tel:+48795575339"
