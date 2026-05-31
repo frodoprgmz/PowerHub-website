@@ -123,6 +123,9 @@ export function MembershipPurchaseSection() {
               <p>
                 4. Prześlij potwierdzenie płatności na numer <span className="font-semibold">795 575 339</span>.
               </p>
+              <p>
+                5. Indywidualny kod do drzwi zostanie wysłany smsem
+              </p>
             </div>
 
             <a
