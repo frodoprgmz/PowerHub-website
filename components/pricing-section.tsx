@@ -88,7 +88,7 @@ export function PricingSection() {
                       <span className="text-xl text-muted-foreground"> zł</span>
                     </div>
                     <a
-                      href="#kontakt"
+                      href="#zakup-karnetu"
                       className="relative overflow-hidden block text-center py-3 font-semibold uppercase tracking-wider text-sm bg-foreground text-background rounded-full transition-all group hover:shadow-lg"
                     >
                       <span className="relative z-10">Wybierz plan</span>
@@ -121,7 +121,7 @@ export function PricingSection() {
                       <span className="text-xl text-muted-foreground"> zł</span>
                     </div>
                     <a
-                      href="#kontakt"
+                      href="#zakup-karnetu"
                       className="relative overflow-hidden block text-center py-3 font-semibold uppercase tracking-wider text-sm bg-foreground text-background rounded-full transition-all group hover:shadow-lg mt-auto"
                     >
                       <span className="relative z-10">Wybierz plan</span>

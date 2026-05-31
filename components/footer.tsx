@@ -30,6 +30,7 @@ export function Footer() {
                 { label: "O nas", href: "#o-nas" },
                 { label: "Galeria", href: "#galeria" },
                 { label: "Cennik", href: "#cennik" },
+                { label: "Zakup karnetu", href: "#zakup-karnetu" },
                 { label: "Lokalizacja", href: "#lokalizacja" },
                 { label: "Kontakt", href: "#kontakt" },
               ].map((link) => (

@@ -5,11 +5,11 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/images/gym-hero.jpg", alt: "Główna sala treningowa" },
+  { src: "/images/gym-hero.jpg", alt: "Stanowiska do przysiadów i wyciskania" },
   { src: "/images/gym-weights.jpg", alt: "Strefa wolnych ciężarów" },
-  { src: "/images/gym-cardio.jpg", alt: "Strefa cardio" },
+  { src: "/images/gym-cardio.jpg", alt: "Strefa cardio\nŁawka do hip thrustów\nŁawka GHD" },
   { src: "/images/gym-functional.jpg", alt: "Strefa maszyn" },
-  { src: "/images/gym-locker.jpg", alt: "Szatnie" },
+  { src: "/images/gym-locker.jpg", alt: "Szatnia" },
 ];
 
 export function GallerySection() {
@@ -50,7 +50,7 @@ export function GallerySection() {
                 className="object-cover transition-all duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/60 transition-colors duration-300 flex items-center justify-center rounded-2xl">
-                <span className="text-background text-sm font-semibold uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-background text-sm font-semibold uppercase tracking-wider whitespace-pre-line text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {img.alt}
                 </span>
               </div>

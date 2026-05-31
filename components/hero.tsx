@@ -8,11 +8,11 @@ export function Hero() {
         src="/images/gym-hero.jpg"
         alt="Wnetrze silowni Powerhub"
         fill
-        className="object-cover opacity-30"
+        className="object-cover opacity-90 blur-sm brightness-105"
         priority
         quality={90}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/40 to-foreground" />
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/10 via-foreground/5 to-foreground/10" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-36 md:pt-40 pb-20 text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
@@ -30,7 +30,7 @@ export function Hero() {
             alt="Powerhub Logo"
             width={700}
             height={252}
-            className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain invert"
+            className="h-36 md:h-48 lg:h-64 w-auto mx-auto object-contain"
             priority
           />
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-background/70 leading-relaxed mb-12 text-pretty">

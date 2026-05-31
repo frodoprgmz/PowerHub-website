@@ -74,7 +74,7 @@ export function AboutSection() {
                     src="/images/gym-weights.jpg"
                     alt="Strefa wolnych ciezarow"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="object-cover transition-all duration-500"
                   />
                 </div>
                 <div className="relative h-48 overflow-hidden rounded-2xl">
@@ -82,7 +82,7 @@ export function AboutSection() {
                     src="/images/gym-locker.jpg"
                     alt="Szatnie"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="object-cover transition-all duration-500"
                   />
                 </div>
               </div>
@@ -92,7 +92,7 @@ export function AboutSection() {
                     src="/images/gym-cardio.jpg"
                     alt="Strefa cardio"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="object-cover transition-all duration-500"
                   />
                 </div>
                 <div className="relative h-64 overflow-hidden rounded-2xl">
@@ -100,7 +100,7 @@ export function AboutSection() {
                     src="/images/gym-functional.jpg"
                     alt="Strefa maszyn"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="object-cover transition-all duration-500"
                   />
                 </div>
               </div>

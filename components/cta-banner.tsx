@@ -5,12 +5,12 @@ export function CtaBanner() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden bg-foreground">
       <Image
-        src="/images/gym-class.jpg"
+        src="/images/gym-hero.jpg"
         alt="Zajęcia na siłowni"
         fill
-        className="object-cover opacity-20"
+        className="object-cover opacity-90 blur-sm brightness-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/95 to-foreground/90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-foreground/10 via-foreground/5 to-foreground/10" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <div className="flex items-center justify-center mb-6">

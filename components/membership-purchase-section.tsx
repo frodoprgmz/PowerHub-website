@@ -14,7 +14,7 @@ export function MembershipPurchaseSection() {
           </p>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-start">
+        <div className="grid gap-10">
           <div className="space-y-6">
             <ol className="space-y-4">
               <li className="rounded-3xl border border-border bg-card p-6 shadow-sm">
@@ -37,7 +37,7 @@ export function MembershipPurchaseSection() {
                   <h3 className="text-lg font-semibold text-foreground">Wykonaj przelew</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Przelej kwotę zależną od wybranej wejściówki na konto bankowe <span className="font-semibold">6710 2034 6600 0940 2023 0250 3</span>.
+                  Przelej kwotę zależną od wybranej wejściówki na konto bankowe <span className="font-semibold">67 1020 3466 0000 9402 0230 2503</span>.
                 </p>
               </li>
 
@@ -109,18 +109,16 @@ export function MembershipPurchaseSection() {
                 </p>
               </li>
             </ol>
+
+            <div className="flex justify-center">
+              <a
+                href="tel:+48795575339"
+                className="inline-flex w-full sm:w-auto justify-center rounded-full bg-foreground px-7 py-3 text-sm font-semibold uppercase tracking-wider text-background transition-all duration-300 hover:shadow-lg hover:shadow-foreground/20"
+              >
+                Wyślij potwierdzenie
+              </a>
+            </div>
           </div>
-
-          <aside className="rounded-3xl border border-border bg-card p-8 shadow-sm">
-            
-
-            <a
-              href="tel:+48795575339"
-              className="mt-4 inline-flex w-full justify-center rounded-full bg-foreground px-7 py-3 text-sm font-semibold uppercase tracking-wider text-background transition-all duration-300 hover:shadow-lg hover:shadow-foreground/20"
-            >
-              Wyślij potwierdzenie
-            </a>
-          </aside>
         </div>
       </div>
     </section>
