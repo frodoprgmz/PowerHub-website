@@ -97,6 +97,17 @@ export function MembershipPurchaseSection() {
                   Wraz z zakupem karnetu zobowiązujesz się do przestrzegania regulaminu siłowni.
                 </p>
               </li>
+              <li className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-foreground text-background font-semibold">
+                    7
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Zobowiązanie do regulaminu</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Indywidualny kod do drzwi zostanie wysłany smsem
+                </p>
+              </li>
             </ol>
           </div>
 
@@ -123,9 +134,7 @@ export function MembershipPurchaseSection() {
               <p>
                 4. Prześlij potwierdzenie płatności na numer <span className="font-semibold">795 575 339</span>.
               </p>
-              <p>
-                5. Indywidualny kod do drzwi zostanie wysłany smsem
-              </p>
+              
             </div>
 
             <a
