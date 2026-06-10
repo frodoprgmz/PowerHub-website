@@ -11,6 +11,7 @@ export function MembershipPurchaseSection() {
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-3xl mx-auto text-pretty">
             Szybki proces zakupu karnetu krok po kroku. Wykonaj wszystkie punkty, aby aktywować dostęp do siłowni.
+            UWAGA! Czas oczekiwania na karnet/wejsciówke - do 12 godzin
           </p>
         </div>
 
