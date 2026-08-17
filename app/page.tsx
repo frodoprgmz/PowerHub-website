@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { GallerySection } from "@/components/gallery-section"
 import { PricingSection } from "@/components/pricing-section"
 import { MembershipPurchaseSection } from "@/components/membership-purchase-section"
+import { InstructorsSection } from "@/components/instructors-section"
 import { CtaBanner } from "@/components/cta-banner"
 import { LocationSection } from "@/components/location-section"
 import { ContactSection } from "@/components/contact-section"
@@ -18,6 +19,7 @@ export default function Home() {
       <GallerySection />
       <PricingSection />
       <MembershipPurchaseSection />
+      <InstructorsSection />
       <CtaBanner />
       <LocationSection />
       <ContactSection />
