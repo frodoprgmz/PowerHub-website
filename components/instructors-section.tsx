@@ -13,11 +13,11 @@ const trainers = [
     imagePosition: "center",
     imageScale: "scale-110 group-hover:scale-115",
     pricing: [
-      { name: "Trening personalny", price: "100", desc: "Jedna sesja treningowa z trenerem" },
-      { name: "Plan treningowy", price: "150", desc: "Indywidualny plan dostosowany do Twoich celów" },
-      { name: "Trening personalny + plan treningowy", price: "200", desc: "Sesja treningowa + plan na miesiąc" },
-      { name: "Pakiet 10 treningów + karnet", price: "900", desc: "10 sesji z trenerem + miesięczny karnet + plan treningowy" },
-      { name: "Pakiet 20 treningów + karnet", price: "1600", desc: "20 sesji z trenerem + miesięczny karnet + plan treningowy" },
+      { name: "Trening personalny", price: "100", desc: "" },
+      { name: "Plan treningowy", price: "150", desc: "" },
+      { name: "Trening personalny + plan treningowy", price: "200", desc: "" },
+      { name: "Pakiet 10 treningów + karnet", price: "900", desc: "" },
+      { name: "Pakiet 20 treningów + karnet", price: "1600", desc: "" },
     ],
   },
   {
