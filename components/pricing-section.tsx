@@ -15,33 +15,6 @@ const memberships = [
   },
 ];
 
-const personalTraining = [
-  {
-    name: "Trening personalny",
-    price: "100",
-    desc: "Jedna sesja treningowa z trenerem",
-  },
-  {
-    name: "Plan treningowy",
-    price: "150",
-    desc: "Indywidualny plan dostosowany do Twoich celów",
-  },
-  {
-    name: "Trening personalny + plan treningowy",
-    price: "200",
-    desc: "Sesja treningowa + plan na miesiąc",
-  },
-  {
-    name: "Pakiet 10 treningów + karnet",
-    price: "900",
-    desc: "10 sesji z trenerem + miesięczny karnet + plan treningowy",
-  },
-  {
-    name: "Pakiet 20 treningów + karnet",
-    price: "1600",
-    desc: "20 sesji z trenerem + miesięczny karnet + plan treningowy",
-  },
-];
 
 export function PricingSection() {
   return (
@@ -61,10 +34,9 @@ export function PricingSection() {
 
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="karnety" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-8">
-              <TabsTrigger value="karnety">Karnety</TabsTrigger>
-              <TabsTrigger value="treningi">Treningi Personalne</TabsTrigger>
-            </TabsList>
+            <TabsList className="grid w-full grid-cols-1 mb-8">
+                          <TabsTrigger value="karnety">Karnety</TabsTrigger>
+                        </TabsList>
 
             <TabsContent value="karnety" className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -99,38 +71,6 @@ export function PricingSection() {
               </div>
             </TabsContent>
 
-            <TabsContent value="treningi" className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3">
-                {personalTraining.map((plan) => (
-                  <div
-                    key={plan.name}
-                    className="flex flex-col border border-border bg-card p-8 rounded-2xl hover:border-silver hover:shadow-xl transition-all duration-300"
-                  >
-                    <div className="mb-6">
-                      <h3 className="font-serif text-lg font-bold uppercase text-foreground mb-2">
-                        {plan.name}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {plan.desc}
-                      </p>
-                    </div>
-                    <div className="flex items-baseline gap-1 mb-8">
-                      <span className="font-serif text-5xl font-black text-foreground">
-                        {plan.price}
-                      </span>
-                      <span className="text-xl text-muted-foreground"> zł</span>
-                    </div>
-                    <a
-                      href="#zakup-karnetu"
-                      className="relative overflow-hidden block text-center py-3 font-semibold uppercase tracking-wider text-sm bg-foreground text-background rounded-full transition-all group hover:shadow-lg mt-auto"
-                    >
-                      <span className="relative z-10">Wybierz plan</span>
-                      <span className="absolute inset-0 scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 bg-silver rounded-full" />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </TabsContent>
           </Tabs>
         </div>
       </div>

@@ -12,6 +12,13 @@ const trainers = [
     alt: "Jerzy Pacer - trener personalny Powerhub",
     imagePosition: "center",
     imageScale: "scale-110 group-hover:scale-115",
+    pricing: [
+      { name: "Trening personalny", price: "100", desc: "Jedna sesja treningowa z trenerem" },
+      { name: "Plan treningowy", price: "150", desc: "Indywidualny plan dostosowany do Twoich celów" },
+      { name: "Trening personalny + plan treningowy", price: "200", desc: "Sesja treningowa + plan na miesiąc" },
+      { name: "Pakiet 10 treningów + karnet", price: "900", desc: "10 sesji z trenerem + miesięczny karnet + plan treningowy" },
+      { name: "Pakiet 20 treningów + karnet", price: "1600", desc: "20 sesji z trenerem + miesięczny karnet + plan treningowy" },
+    ],
   },
   {
     name: "Paweł Bajak",
@@ -23,6 +30,17 @@ const trainers = [
     alt: "Paweł Bajak - trener personalny Powerhub",
     imagePosition: "center 5%",
     imageScale: "scale-100 group-hover:scale-105",
+    pricing: [
+      { name: "Sesja treningowa", price: "110", desc: "" },
+      { name: "Pakiet 5 treningów", price: "480", desc: "" },
+      { name: "Pakiet 8 treningów", price: "740", desc: "" },
+      { name: "Prowadzenie", price: "150", desc: "" },
+      { name: "Sesja dla 2 osób", price: "170", desc: "" },
+      { name: "Pakiet 5 treningów dla 2 osób", price: "800", desc: "" },
+      { name: "Pakiet 8 treningów dla 2 osób", price: "1200", desc: "" },
+      { name: "Plan", price: "80", desc: "" },
+      { name: "Hybryda (trening+prowadzenie)", price: "do ustalenia", desc: "" },
+    ],
   },
 ];
 
@@ -86,6 +104,23 @@ export function InstructorsSection() {
                     <span>Instagram</span>
                   </a>
                 </div>
+
+                {trainer.pricing && (
+                  <div className="mt-6 w-full text-left">
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-2">Cennik</h4>
+                    <ul className="space-y-2">
+                      {trainer.pricing.map((p) => (
+                        <li key={p.name} className="flex justify-between items-start">
+                          <div>
+                            <span className="font-medium">{p.name}</span>
+                            {p.desc && <div className="text-xs text-muted-foreground">{p.desc}</div>}
+                          </div>
+                          <div className="font-serif text-lg font-black">{p.price}{p.price !== 'do ustalenia' ? ' zł' : ''}</div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </article>
           ))}
