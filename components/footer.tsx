@@ -35,7 +35,7 @@ export function Footer() {
                 { label: "Lokalizacja", href: "#lokalizacja" },
                 { label: "Kontakt", href: "#kontakt" },
                 { label: "Regulamin", href: "/regulamin" },
-                { label: "Polityka Prywatno�ci", href: "/polityka-prywatnosci" },
+                { label: "Polityka Prywatności", href: "/polityka-prywatnosci" },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -76,8 +76,8 @@ export function Footer() {
             </p>
           </div>
           <div className="md:text-right">
-            <h4 className="font-bold text-background mb-2">Bezpieczne P�atno�ci</h4>
-            <p className="text-xs text-background/60 mb-2">P�atno�ci obs�uguje PayU.</p>
+            <h4 className="font-bold text-background mb-2">Bezpieczne Płatności</h4>
+            <p className="text-xs text-background/60 mb-2">Płatności obsługuje PayU.</p>
             <div className="flex gap-2 md:justify-end text-background/40">
               <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">BLIK</span>
               <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">PayU</span>
@@ -89,7 +89,7 @@ export function Footer() {
 
         <div className="mt-8 pt-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-background/40">
-            &copy; 2026 Powerhub. Wszelkie prawa zastrze�one.
+            &copy; 2026 Powerhub. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </div>
