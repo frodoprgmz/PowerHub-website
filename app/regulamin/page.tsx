@@ -12,8 +12,8 @@ export default function RegulaminPage() {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-background">§1 Postanowienia ogólne</h2>
             <p>1. Niniejszy regulamin określa zasady korzystania z siłowni POWERHUB oraz zakupu karnetów dostępu poprzez aplikację mobilną i stronę internetową.</p>
-            <p>2. Operatorem siłowni i sprzedawcą jest firma <strong>[NAZWA FIRMY]</strong> z siedzibą: <strong>[ADRES FIRMY]</strong>, NIP: <strong>[NIP]</strong>, zwana dalej "Operatorem".</p>
-            <p>3. Kontakt z Operatorem jest możliwy pod adresem e-mail: <strong>[EMAIL_KONTAKTOWY]</strong> lub numerem telefonu: <strong>[TELEFON]</strong>.</p>
+            <p>2. Operatorem siłowni i sprzedawcą jest firma <strong>Studio Sprawności i Zdrowia Jerzy Pacer</strong> z siedzibą: <strong>Skomielna Biała 888, 32-434</strong>, NIP: <strong>6812116894</strong>, zwana dalej "Operatorem".</p>
+            <p>3. Kontakt z Operatorem jest możliwy pod adresem e-mail: <strong>pacerjerzy@gmail.com</strong> lub numerem telefonu: <strong>+48 795 767 621</strong>.</p>
           </section>
 
           <section>

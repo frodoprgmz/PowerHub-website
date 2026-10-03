@@ -11,7 +11,7 @@ export default function PolitykaPrywatnosciPage() {
         <div className="space-y-6 text-background/80 leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold mb-4 text-background">§1 Administrator Danych</h2>
-            <p>Administratorem Twoich danych osobowych jest <strong>[NAZWA FIRMY]</strong>, adres: <strong>[ADRES FIRMY]</strong>, NIP: <strong>[NIP]</strong>, e-mail: <strong>[EMAIL_KONTAKTOWY]</strong>.</p>
+            <p>Administratorem Twoich danych osobowych jest <strong>Studio Sprawności i Zdrowia Jerzy Pacer</strong>, adres: <strong>Skomielna Biała 888, 32-434</strong>, NIP: <strong>6812116894</strong>, e-mail: <strong>pacerjerzy@gmail.com</strong>.</p>
           </section>
 
           <section>

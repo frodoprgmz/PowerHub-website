@@ -69,10 +69,10 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-background mb-2">Dane Firmy</h4>
             <p className="text-xs text-background/60 leading-relaxed">
-              [NAZWA FIRMY]<br/>
-              [ADRES FIRMY]<br/>
-              NIP: [NIP]<br/>
-              Kontakt: [EMAIL_KONTAKTOWY] | [TELEFON]
+              Studio Sprawności i Zdrowia Jerzy Pacer<br/>
+              Skomielna Biała 888, 32-434<br/>
+              NIP: 6812116894<br/>
+              Kontakt: pacerjerzy@gmail.com | +48 795 767 621
             </p>
           </div>
           <div className="md:text-right">
