@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -27,23 +28,23 @@ export function Footer() {
             </h4>
             <nav className="flex flex-col gap-2">
               {[
-                { label: "O nas", href: "/#" },
-                { label: "Galeria", href: "/#" },
-                { label: "Cennik", href: "/#" },
-                { label: "Zakup karnetu", href: "/#" },
-                { label: "Trenerzy", href: "/#" },
-                { label: "Lokalizacja", href: "/#" },
-                { label: "Kontakt", href: "/#" },
+                { label: "O nas", href: "/#o-nas" },
+                { label: "Galeria", href: "/#galeria" },
+                { label: "Cennik", href: "/#cennik" },
+                { label: "Zakup karnetu", href: "#" },
+                { label: "Trenerzy", href: "/#trenerzy" },
+                { label: "Lokalizacja", href: "/#lokalizacja" },
+                { label: "Kontakt", href: "/#kontakt" },
                 { label: "Regulamin", href: "/regulamin" },
                 { label: "Polityka Prywatności", href: "/polityka-prywatnosci" },
               ].map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="text-sm text-background/60 hover:text-silver transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
