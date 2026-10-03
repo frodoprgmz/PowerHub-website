@@ -34,6 +34,8 @@ export function Footer() {
                 { label: "Trenerzy", href: "#trenerzy" },
                 { label: "Lokalizacja", href: "#lokalizacja" },
                 { label: "Kontakt", href: "#kontakt" },
+                { label: "Regulamin", href: "/regulamin" },
+                { label: "Polityka Prywatno�ci", href: "/polityka-prywatnosci" },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -63,13 +65,31 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-8 border-t border-background/10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 className="font-bold text-background mb-2">Dane Firmy</h4>
+            <p className="text-xs text-background/60 leading-relaxed">
+              [NAZWA FIRMY]<br/>
+              [ADRES FIRMY]<br/>
+              NIP: [NIP]<br/>
+              Kontakt: [EMAIL_KONTAKTOWY] | [TELEFON]
+            </p>
+          </div>
+          <div className="md:text-right">
+            <h4 className="font-bold text-background mb-2">Bezpieczne P�atno�ci</h4>
+            <p className="text-xs text-background/60 mb-2">P�atno�ci obs�uguje PayU.</p>
+            <div className="flex gap-2 md:justify-end text-background/40">
+              <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">BLIK</span>
+              <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">PayU</span>
+              <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">VISA</span>
+              <span className="px-2 py-1 border border-background/20 rounded text-xs font-bold">Mastercard</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-background/40">
-            &copy; 2026 Powerhub. Wszelkie prawa zastrzezone.
-          </p>
-          <p className="text-xs text-background/40">            Projekt: Piotr Soból
-          </p>
-          <p className="text-xs text-background/40">            Skomielna Biała 888, 32-434
+            &copy; 2026 Powerhub. Wszelkie prawa zastrze�one.
           </p>
         </div>
       </div>
