@@ -3,37 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const navLinks = [
-  {
-    "label": "O nas",
-    "href": "/#o-nas"
-  },
-  {
-    "label": "Galeria",
-    "href": "/#galeria"
-  },
-  {
-    "label": "Cennik",
-    "href": "/#cennik"
-  },
-  {
-    "label": "Zakup karnetu",
-    "href": "/#zakup-karnetu"
-  },
-  {
-    "label": "Trenerzy",
-    "href": "/#trenerzy"
-  },
-  {
-    "label": "Lokalizacja",
-    "href": "/#lokalizacja"
-  },
-  {
-    "label": "Kontakt",
-    "href": "/#kontakt"
-  }
+  { label: "O nas", href: "/#o-nas" },
+  { label: "Galeria", href: "/#galeria" },
+  { label: "Cennik", href: "/#cennik" },
+  { label: "Zakup karnetu", href: "/#zakup-karnetu" },
+  { label: "Trenerzy", href: "/#trenerzy" },
+  { label: "Lokalizacja", href: "/#lokalizacja" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export function Navbar() {
@@ -102,7 +80,8 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b-0 lg:border-b lg:border-border">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-4 lg:px-6 xl:px-8">
-        <Link href="/"
+        <a
+          href="/"
           className="flex items-center group h-20 md:h-24 overflow-visible"
         >
           <Image
@@ -113,15 +92,17 @@ export function Navbar() {
             className="h-full w-auto object-contain scale-[1.15]"
             priority
           />
-        </Link>
+        </a>
 
         <div className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.map((link) => (
-            <Link
+            <a
+              key={link.href}
+              href={link.href}
               className="text-[12px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.2em] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-foreground hover:after:w-full after:transition-all xl:text-sm"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -132,14 +113,14 @@ export function Navbar() {
           >
             <Phone className="h-4 w-4" />
             <span>795 767 621</span>
-          </Link>
+          </a>
           <a
-            href="#zakup-karnetu"
+            href="/#zakup-karnetu"
             className="relative overflow-hidden bg-foreground text-background px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-foreground/10 group xl:px-7 xl:text-sm"
           >
             <span className="relative z-10">Dołącz do nas</span>
             <span className="absolute inset-0 bg-silver rounded-full scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300" />
-          </Link>
+          </a>
         </div>
 
         <button
@@ -168,7 +149,9 @@ export function Navbar() {
             className="flex flex-col px-6 py-6 gap-4"
           >
             {navLinks.map((link) => (
-              <Link
+              <a
+                key={link.href}
+                href={link.href}
                 onClick={() => {
                   // close menu when link clicked
                   toggleMenu();
@@ -176,7 +159,7 @@ export function Navbar() {
                 className="text-lg font-medium text-foreground hover:text-muted-foreground transition-colors uppercase tracking-wider"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
 
             <div className="pt-4 border-t border-border flex flex-col gap-3">
@@ -186,14 +169,14 @@ export function Navbar() {
               >
                 <Phone className="h-4 w-4" />
                 <span>+48 795 767 621</span>
-              </Link>
+              </a>
               <a
-                href="#zakup-karnetu"
+                href="/#zakup-karnetu"
                 onClick={() => toggleMenu()}
                 className="bg-foreground text-background px-6 py-3 rounded-full text-center font-semibold uppercase tracking-wider"
               >
                 Dołącz do nas
-              </Link>
+              </a>
             </div>
           </div>
         </div>
