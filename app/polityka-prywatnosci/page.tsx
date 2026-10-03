@@ -6,6 +6,12 @@ export default function PolitykaPrywatnosciPage() {
     <main>
       <Navbar />
       <div className="pt-32 pb-16 px-6 max-w-4xl mx-auto text-foreground">
+        
+        <div className="mb-8">
+          <a href="/" className="inline-block px-6 py-3 bg-silver text-background font-bold rounded hover:opacity-90 transition-opacity">
+            ← Wróć do strony głównej
+          </a>
+        </div>
         <h1 className="text-3xl font-bold mb-8">Polityka Prywatności</h1>
         
         <div className="space-y-6 text-foreground/80 leading-relaxed">
