@@ -26,7 +26,7 @@ const trainers = [
     phone: "535 805 786",
     phoneHref: "tel:+48535805786",
     instagram: "https://www.instagram.com/trener_pawii/",
-    image: "/images/instructors/pablo.png",
+    image: "/images/instructors/pawel.jpg",
     alt: "Paweł Bajak - trener personalny Powerhub",
     imagePosition: "center 5%",
     imageScale: "scale-100 group-hover:scale-105",
