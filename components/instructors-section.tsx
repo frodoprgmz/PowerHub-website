@@ -28,7 +28,7 @@ const trainers = [
     instagram: "https://www.instagram.com/trener_pawii/",
     image: "/images/instructors/pawel.jpg",
     alt: "Paweł Bajak - trener personalny Powerhub",
-    imagePosition: "center 5%",
+    imagePosition: "center 20%",
     imageScale: "scale-100 group-hover:scale-105",
     pricing: [
       { name: "Sesja treningowa", price: "110", desc: "" },
